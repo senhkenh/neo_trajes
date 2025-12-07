@@ -31,12 +31,21 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-bg" style="background-image: url('images/fondo.jpg')"></div>
-            <div class="hero-content">
-                <h1>Sumérgete en el Lujo</h1>
-                <p>Descubre la colección más exclusiva de trajes de baño premium</p>
-                <button class="cta-button" onclick="scrollTo('#collection')">Explorar Colección</button>
+        <section id="collection" class="collection" style="padding-top: 120px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nuestra Colección</h2>
+                    <p>Cada pieza es una obra de arte acuática</p>
+                </div>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="elegant">Elegante</button>
+                    <button class="filter-btn" data-filter="casual">Casual</button>
+                    <button class="filter-btn" data-filter="premium">Premium</button>
+                </div>
+
+                <div class="products-grid" id="productsGrid"></div>
             </div>
         </section>
 
@@ -69,24 +78,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="collection" class="collection">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Nuestra Colección</h2>
-                    <p>Cada pieza es una obra de arte acuática</p>
-                </div>
-                
-                <div class="filters">
-                    <button class="filter-btn active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="elegant">Elegante</button>
-                    <button class="filter-btn" data-filter="casual">Casual</button>
-                    <button class="filter-btn" data-filter="premium">Premium</button>
-                </div>
-
-                <div class="products-grid" id="productsGrid"></div>
             </div>
         </section>
 

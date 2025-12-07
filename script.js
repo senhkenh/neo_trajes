@@ -1,24 +1,24 @@
 // Products data
 const products = [
-    { id: 1, name: "Neo Classic Black", price: 189, image: "images/neo01.png", category: "elegant", description: "Elegancia atemporal en negro profundo. Diseño clásico para el hombre sofisticado." },
-    { id: 2, name: "Neo Minimal White", price: 165, image: "images/neo02.png", category: "casual", description: "Pureza minimalista en blanco inmaculado. Simplicidad que habla por sí sola." },
-    { id: 3, name: "Neo Luxury Noir", price: 225, image: "images/neo03.png", category: "premium", description: "Lujo absoluto en tonos noir. La máxima expresión de sofisticación masculina." },
-    { id: 4, name: "Neo Urban Grey", price: 175, image: "images/neo04.png", category: "casual", description: "Gris urbano para el hombre moderno. Versatilidad y estilo en perfecta armonía." },
-    { id: 5, name: "Neo Elite Charcoal", price: 195, image: "images/neo05.png", category: "elegant", description: "Carbón elegante para ocasiones especiales. Distinción en cada detalle." },
-    { id: 6, name: "Neo Sport Mono", price: 155, image: "images/neo06.png", category: "casual", description: "Monocromático deportivo para actividades acuáticas. Funcionalidad premium." },
-    { id: 7, name: "Neo Platinum Edition", price: 250, image: "images/neo07.png", category: "premium", description: "Edición platino de colección limitada. Exclusividad redefinida." },
-    { id: 8, name: "Neo Modern Slate", price: 170, image: "images/neo08.png", category: "casual", description: "Pizarra moderna para el surfista urbano. Contemporáneo y audaz." },
-    { id: 9, name: "Neo Signature Black", price: 285, image: "images/neo09.png", category: "premium", description: "Negro insignia de la marca. La pieza más codiciada de la colección." },
-    { id: 10, name: "Neo Comfort Ash", price: 145, image: "images/neo10.png", category: "casual", description: "Ceniza confortable para días relajados. Comodidad sin comprometer el estilo." },
-    { id: 11, name: "Neo Executive Onyx", price: 275, image: "images/neo11.png", category: "premium", description: "Ónix ejecutivo para el líder nato. Poder y elegancia en una sola pieza." },
-    { id: 12, name: "Neo Classic Pearl", price: 190, image: "images/neo12.png", category: "elegant", description: "Perla clásica de refinamiento absoluto. Elegancia que trasciende el tiempo." },
-    { id: 13, name: "Neo Trend Graphite", price: 160, image: "images/neo13.png", category: "casual", description: "Grafito tendencia para el vanguardista. Moda y funcionalidad unidas." },
-    { id: 14, name: "Neo Gala Obsidian", price: 210, image: "images/neo14.png", category: "elegant", description: "Obsidiana de gala para eventos exclusivos. Sofisticación en estado puro." },
-    { id: 15, name: "Neo Premium Steel", price: 235, image: "images/neo15.png", category: "premium", description: "Acero premium con acabados únicos. Resistencia y estilo en perfecta fusión." },
-    { id: 16, name: "Neo Comfort Ivory", price: 150, image: "images/neo16.png", category: "casual", description: "Marfil confortable para días perfectos. Serenidad y comodidad suprema." },
-    { id: 17, name: "Neo Ocean Titanium", price: 240, image: "images/neo17.png", category: "premium", description: "Titanio oceánico de diseño insignia. Innovación y lujo sin límites." },
-    { id: 18, name: "Neo Versatile Stone", price: 165, image: "images/neo18.png", category: "casual", description: "Piedra versátil para cualquier ocasión. Adaptabilidad y estilo garantizados." },
-    { id: 19, name: "Neo Master Ebony", price: 300, image: "images/neo19.png", category: "premium", description: "Ébano maestro, la obra cumbre. Perfección artesanal en su máxima expresión." }
+    { id: 1, name: "Neo Classic Black", price: 45990, image: "images/neo01.png", category: "elegant", description: "Elegancia atemporal en negro profundo. Diseño clásico para el hombre sofisticado." },
+    { id: 2, name: "Neo Minimal White", price: 39990, image: "images/neo02.png", category: "casual", description: "Pureza minimalista en blanco inmaculado. Simplicidad que habla por sí sola." },
+    { id: 3, name: "Neo Luxury Noir", price: 54990, image: "images/neo03.png", category: "premium", description: "Lujo absoluto en tonos noir. La máxima expresión de sofisticación masculina." },
+    { id: 4, name: "Neo Urban Grey", price: 42990, image: "images/neo04.png", category: "casual", description: "Gris urbano para el hombre moderno. Versatilidad y estilo en perfecta armonía." },
+    { id: 5, name: "Neo Elite Charcoal", price: 47990, image: "images/neo05.png", category: "elegant", description: "Carbón elegante para ocasiones especiales. Distinción en cada detalle." },
+    { id: 6, name: "Neo Sport Mono", price: 37990, image: "images/neo06.png", category: "casual", description: "Monocromático deportivo para actividades acuáticas. Funcionalidad premium." },
+    { id: 7, name: "Neo Platinum Edition", price: 59990, image: "images/neo07.png", category: "premium", description: "Edición platino de colección limitada. Exclusividad redefinida." },
+    { id: 8, name: "Neo Modern Slate", price: 41990, image: "images/neo08.png", category: "casual", description: "Pizarra moderna para el surfista urbano. Contemporáneo y audaz." },
+    { id: 9, name: "Neo Signature Black", price: 69990, image: "images/neo09.png", category: "premium", description: "Negro insignia de la marca. La pieza más codiciada de la colección." },
+    { id: 10, name: "Neo Comfort Ash", price: 35990, image: "images/neo10.png", category: "casual", description: "Ceniza confortable para días relajados. Comodidad sin comprometer el estilo." },
+    { id: 11, name: "Neo Executive Onyx", price: 67990, image: "images/neo11.png", category: "premium", description: "Ónix ejecutivo para el líder nato. Poder y elegancia en una sola pieza." },
+    { id: 12, name: "Neo Classic Pearl", price: 46990, image: "images/neo12.png", category: "elegant", description: "Perla clásica de refinamiento absoluto. Elegancia que trasciende el tiempo." },
+    { id: 13, name: "Neo Trend Graphite", price: 38990, image: "images/neo13.png", category: "casual", description: "Grafito tendencia para el vanguardista. Moda y funcionalidad unidas." },
+    { id: 14, name: "Neo Gala Obsidian", price: 51990, image: "images/neo14.png", category: "elegant", description: "Obsidiana de gala para eventos exclusivos. Sofisticación en estado puro." },
+    { id: 15, name: "Neo Premium Steel", price: 57990, image: "images/neo15.png", category: "premium", description: "Acero premium con acabados únicos. Resistencia y estilo en perfecta fusión." },
+    { id: 16, name: "Neo Comfort Ivory", price: 36990, image: "images/neo16.png", category: "casual", description: "Marfil confortable para días perfectos. Serenidad y comodidad suprema." },
+    { id: 17, name: "Neo Ocean Titanium", price: 58990, image: "images/neo17.png", category: "premium", description: "Titanio oceánico de diseño insignia. Innovación y lujo sin límites." },
+    { id: 18, name: "Neo Versatile Stone", price: 39990, image: "images/neo18.png", category: "casual", description: "Piedra versátil para cualquier ocasión. Adaptabilidad y estilo garantizados." },
+    { id: 19, name: "Neo Master Ebony", price: 74990, image: "images/neo19.png", category: "premium", description: "Ébano maestro, la obra cumbre. Perfección artesanal en su máxima expresión." }
 ];
 
 // Global state
@@ -44,7 +44,7 @@ function loadProducts(filter = 'all') {
             <div class="product-info">
                 <h3 class="product-title">${product.name}</h3>
                 <p class="product-description">${product.description}</p>
-                <div class="product-price">$${product.price}</div>
+                <div class="product-price">$${product.price.toLocaleString('es-CL')}</div>
             </div>
         </div>
     `).join('');
@@ -86,7 +86,7 @@ function setupEventListeners() {
         }
         
         const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-        if (confirm(`¿Proceder con el pago de $${total}?`)) {
+        if (confirm(`¿Proceder con el pago de $${total.toLocaleString('es-CL')}?`)) {
             cart = [];
             updateCartUI();
             toggleCart();
@@ -109,7 +109,7 @@ function openProductModal(productId) {
     document.getElementById('modalImage').src = product.image;
     document.getElementById('modalTitle').textContent = product.name;
     document.getElementById('modalDescription').textContent = product.description;
-    document.getElementById('modalPrice').textContent = `$${product.price}`;
+    document.getElementById('modalPrice').textContent = `$${product.price.toLocaleString('es-CL')}`;
     document.getElementById('addToCartBtn').dataset.productId = productId;
     
     document.getElementById('productModal').classList.add('open');
@@ -168,7 +168,7 @@ function updateCartUI() {
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     
     document.querySelector('.cart-count').textContent = count;
-    document.getElementById('cartTotal').textContent = total;
+    document.getElementById('cartTotal').textContent = total.toLocaleString('es-CL');
     
     const cartItems = document.getElementById('cartItems');
     
@@ -181,7 +181,7 @@ function updateCartUI() {
                 <div class="cart-item-info">
                     <div class="cart-item-title">${item.name}</div>
                     <div class="cart-item-details">Talla: ${item.size} • Cantidad: ${item.quantity}</div>
-                    <div class="cart-item-details">$${item.price * item.quantity}</div>
+                    <div class="cart-item-details">$${(item.price * item.quantity).toLocaleString('es-CL')}</div>
                 </div>
                 <button class="cart-item-remove" onclick="removeFromCart(${item.id})">
                     <i class="fas fa-trash"></i>
