@@ -10,18 +10,32 @@
 </head>
 <body>
     <header class="header">
+        <div class="shipping-banner">
+            <i class="fas fa-truck"></i>
+            <span>Envío gratis a todo Chile en compras sobre $40.000</span>
+        </div>
         <nav class="nav">
             <div class="nav-brand">
                 <img src="images/logo.jpg" alt="Neo" class="logo">
                 <span class="brand-name">Neo Swimwear</span>
             </div>
+            <div class="weather-widget" id="weatherWidget">
+                <i class="fas fa-sun"></i>
+                <span id="weatherTemp">--°C</span>
+                <span id="weatherLocation">Viña del Mar</span>
+            </div>
             <div class="nav-links">
-                <a href="#home">Inicio</a>
-                <a href="#collection">Colección</a>
-                <a href="#about">Nosotros</a>
+                <a href="#collection" data-filter="all">Todos</a>
+                <a href="#collection" data-filter="elegant">Elegante</a>
+                <a href="#collection" data-filter="casual">Casual</a>
+                <a href="#collection" data-filter="premium">Premium</a>
                 <a href="#contact">Contacto</a>
             </div>
             <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar productos...">
+                    <i class="fas fa-search"></i>
+                </div>
                 <button class="cart-btn" onclick="toggleCart()">
                     <i class="fas fa-shopping-bag"></i>
                     <span class="cart-count">0</span>
@@ -31,7 +45,16 @@
     </header>
 
     <main>
-        <section id="collection" class="collection" style="padding-top: 120px;">
+        <section class="hero-banner">
+            <img src="images/beach03.jpg" alt="Ofertas Neo">
+            <div class="banner-content">
+                <h2>NUEVA COLECCIÓN</h2>
+                <p>Hasta 30% OFF en productos seleccionados</p>
+                <button class="banner-btn" onclick="scrollTo('#collection')">Ver Ofertas</button>
+            </div>
+        </section>
+
+        <section id="collection" class="collection">
             <div class="container">
                 <div class="section-header">
                     <h2>Nuestra Colección</h2>
@@ -70,13 +93,7 @@
                             <p>La sofisticación no es una moda, es una actitud</p>
                         </div>
                     </div>
-                    <div class="panoramic-item">
-                        <img src="images/beach03.jpg" alt="Modern Coast">
-                        <div class="panoramic-content">
-                            <h3>Conquista el Día</h3>
-                            <p>Tu confianza es tu mejor accesorio</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>

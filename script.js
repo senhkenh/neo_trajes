@@ -1,24 +1,24 @@
 // Products data
 const products = [
-    { id: 1, name: "Neo Classic Black", price: 45990, image: "images/neo01.png", category: "elegant", description: "Elegancia atemporal en negro profundo. Diseño clásico para el hombre sofisticado." },
-    { id: 2, name: "Neo Minimal White", price: 39990, image: "images/neo02.png", category: "casual", description: "Pureza minimalista en blanco inmaculado. Simplicidad que habla por sí sola." },
-    { id: 3, name: "Neo Luxury Noir", price: 54990, image: "images/neo03.png", category: "premium", description: "Lujo absoluto en tonos noir. La máxima expresión de sofisticación masculina." },
-    { id: 4, name: "Neo Urban Grey", price: 42990, image: "images/neo04.png", category: "casual", description: "Gris urbano para el hombre moderno. Versatilidad y estilo en perfecta armonía." },
-    { id: 5, name: "Neo Elite Charcoal", price: 47990, image: "images/neo05.png", category: "elegant", description: "Carbón elegante para ocasiones especiales. Distinción en cada detalle." },
-    { id: 6, name: "Neo Sport Mono", price: 37990, image: "images/neo06.png", category: "casual", description: "Monocromático deportivo para actividades acuáticas. Funcionalidad premium." },
-    { id: 7, name: "Neo Platinum Edition", price: 59990, image: "images/neo07.png", category: "premium", description: "Edición platino de colección limitada. Exclusividad redefinida." },
-    { id: 8, name: "Neo Modern Slate", price: 41990, image: "images/neo08.png", category: "casual", description: "Pizarra moderna para el surfista urbano. Contemporáneo y audaz." },
-    { id: 9, name: "Neo Signature Black", price: 69990, image: "images/neo09.png", category: "premium", description: "Negro insignia de la marca. La pieza más codiciada de la colección." },
-    { id: 10, name: "Neo Comfort Ash", price: 35990, image: "images/neo10.png", category: "casual", description: "Ceniza confortable para días relajados. Comodidad sin comprometer el estilo." },
-    { id: 11, name: "Neo Executive Onyx", price: 67990, image: "images/neo11.png", category: "premium", description: "Ónix ejecutivo para el líder nato. Poder y elegancia en una sola pieza." },
-    { id: 12, name: "Neo Classic Pearl", price: 46990, image: "images/neo12.png", category: "elegant", description: "Perla clásica de refinamiento absoluto. Elegancia que trasciende el tiempo." },
-    { id: 13, name: "Neo Trend Graphite", price: 38990, image: "images/neo13.png", category: "casual", description: "Grafito tendencia para el vanguardista. Moda y funcionalidad unidas." },
-    { id: 14, name: "Neo Gala Obsidian", price: 51990, image: "images/neo14.png", category: "elegant", description: "Obsidiana de gala para eventos exclusivos. Sofisticación en estado puro." },
-    { id: 15, name: "Neo Premium Steel", price: 57990, image: "images/neo15.png", category: "premium", description: "Acero premium con acabados únicos. Resistencia y estilo en perfecta fusión." },
-    { id: 16, name: "Neo Comfort Ivory", price: 36990, image: "images/neo16.png", category: "casual", description: "Marfil confortable para días perfectos. Serenidad y comodidad suprema." },
-    { id: 17, name: "Neo Ocean Titanium", price: 58990, image: "images/neo17.png", category: "premium", description: "Titanio oceánico de diseño insignia. Innovación y lujo sin límites." },
-    { id: 18, name: "Neo Versatile Stone", price: 39990, image: "images/neo18.png", category: "casual", description: "Piedra versátil para cualquier ocasión. Adaptabilidad y estilo garantizados." },
-    { id: 19, name: "Neo Master Ebony", price: 74990, image: "images/neo19.png", category: "premium", description: "Ébano maestro, la obra cumbre. Perfección artesanal en su máxima expresión." }
+    { id: 1, name: "Neo Classic Black", price: 145990, image: "images/neo01.png", category: "elegant", description: "Elegancia atemporal en negro profundo. Diseño clásico para el hombre sofisticado.", sale: true },
+    { id: 2, name: "Neo Minimal White", price: 119990, image: "images/neo02.png", category: "casual", description: "Pureza minimalista en blanco inmaculado. Simplicidad que habla por sí sola." },
+    { id: 3, name: "Neo Luxury Noir", price: 189990, image: "images/neo03.png", category: "premium", description: "Lujo absoluto en tonos noir. La máxima expresión de sofisticación masculina." },
+    { id: 4, name: "Neo Urban Grey", price: 129990, image: "images/neo04.png", category: "casual", description: "Gris urbano para el hombre moderno. Versatilidad y estilo en perfecta armonía.", sale: true },
+    { id: 5, name: "Neo Elite Charcoal", price: 159990, image: "images/neo05.png", category: "elegant", description: "Carbón elegante para ocasiones especiales. Distinción en cada detalle." },
+    { id: 6, name: "Neo Sport Mono", price: 109990, image: "images/neo06.png", category: "casual", description: "Monocromático deportivo para actividades acuáticas. Funcionalidad premium.", sale: true },
+    { id: 7, name: "Neo Platinum Edition", price: 249990, image: "images/neo07.png", category: "premium", description: "Edición platino de colección limitada. Exclusividad redefinida." },
+    { id: 8, name: "Neo Modern Slate", price: 124990, image: "images/neo08.png", category: "casual", description: "Pizarra moderna para el surfista urbano. Contemporáneo y audaz." },
+    { id: 9, name: "Neo Signature Black", price: 279990, image: "images/neo09.png", category: "premium", description: "Negro insignia de la marca. La pieza más codiciada de la colección." },
+    { id: 10, name: "Neo Comfort Ash", price: 104990, image: "images/neo10.png", category: "casual", description: "Ceniza confortable para días relajados. Comodidad sin comprometer el estilo.", sale: true },
+    { id: 11, name: "Neo Executive Onyx", price: 269990, image: "images/neo11.png", category: "premium", description: "Ónix ejecutivo para el líder nato. Poder y elegancia en una sola pieza." },
+    { id: 12, name: "Neo Classic Pearl", price: 149990, image: "images/neo12.png", category: "elegant", description: "Perla clásica de refinamiento absoluto. Elegancia que trasciende el tiempo.", sale: true },
+    { id: 13, name: "Neo Trend Graphite", price: 114990, image: "images/neo13.png", category: "casual", description: "Grafito tendencia para el vanguardista. Moda y funcionalidad unidas." },
+    { id: 14, name: "Neo Gala Obsidian", price: 169990, image: "images/neo14.png", category: "elegant", description: "Obsidiana de gala para eventos exclusivos. Sofisticación en estado puro." },
+    { id: 15, name: "Neo Premium Steel", price: 239990, image: "images/neo15.png", category: "premium", description: "Acero premium con acabados únicos. Resistencia y estilo en perfecta fusión." },
+    { id: 16, name: "Neo Comfort Ivory", price: 109990, image: "images/neo16.png", category: "casual", description: "Marfil confortable para días perfectos. Serenidad y comodidad suprema." },
+    { id: 17, name: "Neo Ocean Titanium", price: 259990, image: "images/neo17.png", category: "premium", description: "Titanio oceánico de diseño insignia. Innovación y lujo sin límites." },
+    { id: 18, name: "Neo Versatile Stone", price: 119990, image: "images/neo18.png", category: "casual", description: "Piedra versátil para cualquier ocasión. Adaptabilidad y estilo garantizados.", sale: true },
+    { id: 19, name: "Neo Master Ebony", price: 299990, image: "images/neo19.png", category: "premium", description: "Ébano maestro, la obra cumbre. Perfección artesanal en su máxima expresión." }
 ];
 
 // Global state
@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
     loadProducts();
     setupEventListeners();
     updateCartUI();
+    setupSearch();
+    loadWeather();
 });
 
 // Load products
@@ -40,6 +42,7 @@ function loadProducts(filter = 'all') {
     
     grid.innerHTML = filteredProducts.map(product => `
         <div class="product-card" onclick="openProductModal(${product.id})">
+            ${product.sale ? '<div class="sale-badge"><i class="fas fa-tag"></i> SALE</div>' : ''}
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <div class="product-info">
                 <h3 class="product-title">${product.name}</h3>
@@ -98,6 +101,35 @@ function setupEventListeners() {
     document.getElementById('addToCartBtn').addEventListener('click', function() {
         const productId = parseInt(this.dataset.productId);
         addToCart(productId);
+    });
+}
+
+// Setup search
+function setupSearch() {
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        const filtered = products.filter(p => 
+            p.name.toLowerCase().includes(query) || 
+            p.description.toLowerCase().includes(query)
+        );
+        
+        const grid = document.getElementById('productsGrid');
+        if (query === '') {
+            loadProducts(currentFilter);
+        } else {
+            grid.innerHTML = filtered.map(product => `
+                <div class="product-card" onclick="openProductModal(${product.id})">
+                    ${product.sale ? '<div class="sale-badge"><i class="fas fa-tag"></i> SALE</div>' : ''}
+                    <img src="${product.image}" alt="${product.name}" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">${product.name}</h3>
+                        <p class="product-description">${product.description}</p>
+                        <div class="product-price">$${product.price.toLocaleString('es-CL')}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
     });
 }
 
@@ -231,6 +263,41 @@ function showNotification(message) {
     }, 3000);
 }
 
+// Load weather
+function loadWeather() {
+    // OpenWeatherMap API (gratuita) - Reemplaza 'TU_API_KEY' con tu clave de https://openweathermap.org/api
+    const apiKey = 'TU_API_KEY';
+    const city = 'Vina del Mar,CL';
+    
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=es`)
+        .then(response => response.json())
+        .then(data => {
+            const temp = Math.round(data.main.temp);
+            const icon = getWeatherIcon(data.weather[0].main);
+            
+            document.getElementById('weatherTemp').textContent = `${temp}°C`;
+            document.querySelector('.weather-widget i').className = `fas ${icon}`;
+        })
+        .catch(error => {
+            console.log('Weather data not available');
+            document.getElementById('weatherTemp').textContent = '22°C';
+        });
+}
+
+function getWeatherIcon(condition) {
+    const icons = {
+        'Clear': 'fa-sun',
+        'Clouds': 'fa-cloud',
+        'Rain': 'fa-cloud-rain',
+        'Drizzle': 'fa-cloud-rain',
+        'Thunderstorm': 'fa-bolt',
+        'Snow': 'fa-snowflake',
+        'Mist': 'fa-smog',
+        'Fog': 'fa-smog'
+    };
+    return icons[condition] || 'fa-sun';
+}
+
 // Close overlays on click
 document.getElementById('overlay').addEventListener('click', function() {
     closeModal();
@@ -242,6 +309,16 @@ document.getElementById('overlay').addEventListener('click', function() {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
+        const filter = this.dataset.filter;
+        
+        if (filter) {
+            currentFilter = filter;
+            loadProducts(currentFilter);
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.filter === filter);
+            });
+        }
+        
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             target.scrollIntoView({
