@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Swimwear - Trajes de Baño Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="images/logo.jpg" alt="Neo" class="logo">
+                <span class="brand-name">Neo Swimwear</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Inicio</a>
+                <a href="#collection">Colección</a>
+                <a href="#about">Nosotros</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-btn" onclick="toggleCart()">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg" style="background-image: url('images/fondo.jpg')"></div>
+            <div class="hero-content">
+                <h1>Sumérgete en el Lujo</h1>
+                <p>Descubre la colección más exclusiva de trajes de baño premium</p>
+                <button class="cta-button" onclick="scrollTo('#collection')">Explorar Colección</button>
+            </div>
+        </section>
+
+        <section class="lifestyle">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Lifestyle</h2>
+                    <p>El estilo de vida que defines</p>
+                </div>
+                <div class="lifestyle-panoramic">
+                    <div class="panoramic-item">
+                        <img src="images/beach01.jpg" alt="Beach Lifestyle">
+                        <div class="panoramic-content">
+                            <h3>Vive la Elegancia</h3>
+                            <p>Cada momento es una oportunidad para brillar</p>
+                        </div>
+                    </div>
+                    <div class="panoramic-item">
+                        <img src="images/beach02.jpg" alt="Luxury Beach">
+                        <div class="panoramic-content">
+                            <h3>Define tu Estilo</h3>
+                            <p>La sofisticación no es una moda, es una actitud</p>
+                        </div>
+                    </div>
+                    <div class="panoramic-item">
+                        <img src="images/beach03.jpg" alt="Modern Coast">
+                        <div class="panoramic-content">
+                            <h3>Conquista el Día</h3>
+                            <p>Tu confianza es tu mejor accesorio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collection" class="collection">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nuestra Colección</h2>
+                    <p>Cada pieza es una obra de arte acuática</p>
+                </div>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="elegant">Elegante</button>
+                    <button class="filter-btn" data-filter="casual">Casual</button>
+                    <button class="filter-btn" data-filter="premium">Premium</button>
+                </div>
+
+                <div class="products-grid" id="productsGrid"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contáctanos</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@neoswimwear.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Miami Beach, FL</span>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Mensaje" rows="4" required></textarea>
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Carrito</h3>
+            <button class="close-cart" onclick="toggleCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: $<span id="cartTotal">0</span></span>
+            </div>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="product-detail">
+                <div class="product-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="product-info">
+                    <h2 id="modalTitle"></h2>
+                    <div class="price" id="modalPrice"></div>
+                    <p id="modalDescription"></p>
+                    <div class="size-selector">
+                        <label>Talla:</label>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="XS">XS</button>
+                            <button class="size-btn" data-size="S">S</button>
+                            <button class="size-btn active" data-size="M">M</button>
+                            <button class="size-btn" data-size="L">L</button>
+                            <button class="size-btn" data-size="XL">XL</button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart" id="addToCartBtn">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
